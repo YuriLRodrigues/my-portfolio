@@ -38,10 +38,7 @@ const Knowledges = () => {
         {techs.map((tech, index) => (
           <Tilt
             tiltReverse={true}
-            glareColor="#ffffff"
             scale={1.05}
-            glareEnable
-            glareMaxOpacity={.6}
           >
             <article
               className="group duration-500 hover:shadow-xl dark:hover:shadow-zinc-800 dark:hover:shadow-lg hover:scale-105 bg-white mx-auto my-0 dark:bg-zinc-800 rounded-xl flex flex-col hover:-translate-y-2 justify-center text-center items-center md:w-24 w-24 h-24 p:14 md:h-28 overflow-hidden"
