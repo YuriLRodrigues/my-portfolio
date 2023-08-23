@@ -1,19 +1,16 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-// import { useMotionValue, useTransform, motion } from "framer-motion";
 import { techs } from "../Projects/techs";
-
+import Tilt from "react-parallax-tilt";
 
 const Knowledges = () => {
   const { theme } = useContext(ThemeContext);
-  // const x = useMotionValue(0);
-  // const y = useMotionValue(0);
-  // const rotateX = useTransform(y, [-100, 100], [30, -30]);
-  // const rotateY = useTransform(x, [-100, 100], [-30, 30]);
-
 
   return (
-    <section id="knowledges" className="py-20 min-h-[80vh] pb-20 dark:bg-neutral-900 overflow-hidden relative flex flex-col items-center justify-center mx-auto">
+    <section
+      id="knowledges"
+      className="py-20 min-h-[80vh] pb-20 dark:bg-neutral-900 overflow-hidden relative flex flex-col items-center justify-center mx-auto"
+    >
       <section
         className="md:absolute text-center md:top-20"
         data-aos="fade-down"
@@ -39,21 +36,25 @@ const Knowledges = () => {
         data-aos-duration="1300"
       >
         {techs.map((tech, index) => (
-          
+          <Tilt
+            tiltReverse={true}
+            glareColor="#ffffff"
+            scale={1.05}
+            glareEnable
+            glareMaxOpacity={.6}
+          >
             <article
-              // style={{ x, y, rotateX, rotateY, z: 100 }}
-              // drag
-              // dragElastic={0.18}
-              // dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
-              // whileTap={{ cursor: "grabbing" }}
               className="group duration-500 hover:shadow-xl dark:hover:shadow-zinc-800 dark:hover:shadow-lg hover:scale-105 bg-white mx-auto my-0 dark:bg-zinc-800 rounded-xl flex flex-col hover:-translate-y-2 justify-center text-center items-center md:w-24 w-24 h-24 p:14 md:h-28 overflow-hidden"
               key={index}
             >
-              <i className={`${tech.icon} group-hover:translate-y-[-10%] group-hover:scale-110 duration-500 gradientText text-4xl md:text-6xl`}></i>
+              <i
+                className={`${tech.icon} group-hover:translate-y-[-10%] group-hover:scale-110 duration-500 gradientText text-4xl md:text-6xl`}
+              ></i>
               <p className="translate-y-[200%] duration-500 group-hover:translate-y-1 gradientText font-semibold text-sm">
                 {tech.name}
               </p>
             </article>
+          </Tilt>
         ))}
       </section>
     </section>

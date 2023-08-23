@@ -27,7 +27,7 @@ const Contact = () => {
           </h2>
         </section>
       </section>
-      <section className="grid w-11/12 grid-cols-auto-fit-300 gap-8 mx-auto relative z-[2]" >
+      <section className="grid w-11/12 grid-cols-auto-fit-300 gap-8 mx-auto relative z-[2] pt-10" >
         {projects.map((project, index) => {
           return <ProjectCard key={index} project={project} />;
         })}
