@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { ProjectInfo } from "../types/ProjectType";
 import { register } from "swiper/element";
@@ -13,20 +13,20 @@ import ViewAndRepo from "./ViewAndRepo";
 register();
 
 const ProjectCard = ({ project }: ProjectInfo) => {
-  const [slides, setSlides] = useState<number>(1);
+  // const [slides, setSlides] = useState<number>(1);
 
-  const handleResize = () => {
-    if (window.innerWidth < 1000) {
-      setSlides(1);
-    } else {
-      setSlides(2);
-    }
-  };
+  // const handleResize = () => {
+  //   if (window.innerWidth < 1000) {
+  //     setSlides(1);
+  //   } else {
+  //     setSlides(2);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener("resize", handleResize);
+  //   return () => window.removeEventListener("resize", handleResize);
+  // }, []);
 
   return (
     <article
