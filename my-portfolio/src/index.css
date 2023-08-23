@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Permanent+Marker&family=Poppins:wght@200;300;400;500;600;800&family=Rubik+Wet+Paint&family=Sedgwick+Ave+Display&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+.dark {
+  background-color: #000;
+}
+.light {
+  background-color: #eeeeee;
+}
+.gradientText {
+  background: linear-gradient(
+    90deg,
+    rgba(54, 70, 191, 1) 12%,
+    rgba(26, 174, 212, 1) 81%,
+    rgba(8, 194, 218, 1) 100%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.border-gradient-dark {
+  background: linear-gradient(
+    90deg,
+    rgba(54, 70, 191, 1) 7%,
+    rgba(26, 174, 212, 1) 51%,
+    rgba(8, 194, 218, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.border-gradient-light {
+  background: linear-gradient(
+    90deg,
+    rgba(54, 70, 191, 1) 12%,
+    rgba(26, 174, 212, 1) 81%,
+    rgba(8, 194, 218, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.border-gradient {
+  border-width: 3px;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 0;
+  border-style: solid;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(54, 70, 191, 1) 12%,
+      rgba(26, 174, 212, 1) 81%,
+      rgba(8, 194, 218, 1) 100%
+    )
+    1 200%;
+}
+.button-gradient {
+  border-width: 3px;
+  border-style: outset;
+  border-image: linear-gradient(
+      to right,
+      rgba(54, 70, 191, 1) 12%,
+      rgba(26, 174, 212, 1) 81%,
+      rgba(8, 194, 218, 1) 100%
+    )
+    1;
+}
+.border-text-dark {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+}
+.border-text-light {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+}
+.hexagon-img-dark {
+  background-image: url("./utils/img/Hexagon.svg");
+  background-size: 300px;
+  background-repeat: repeat;
+}
+.hexagon-img-light {
+  background-image: url("./utils/img/HexagonLight.svg");
+  background-size: 300px;
+  background-repeat: repeat;
+}
+.bg {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(90deg, #335fb4 0%, #2ae9c9 100%);
+  filter: blur(20px);
+  z-index: -1;
+}
+.font-rubik {
+  font-family: Rubik Wet Paint;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  background: linear-gradient(
+    90deg,
+    rgba(54, 70, 191, 1) 12%,
+    rgba(26, 174, 212, 1) 81%,
+    rgba(8, 194, 218, 1) 100%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;     
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;      
+}
+
+body::-webkit-scrollbar-thumb {
+  border-width: 7px;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 0;
+  border-style: solid;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(54, 70, 191, 1) 12%,
+      rgba(26, 174, 212, 1) 81%,
+      rgba(8, 194, 218, 1) 100%
+    )
+    1 200%;      
+}
