@@ -10,19 +10,15 @@ const Header = () => {
   const links = [
     {
       name: "Sobre",
-      path: "/sobre",
+      path: "#about",
     },
     {
       name: "Habilidades",
-      path: "/habilidades",
+      path: "#knowledges",
     },
     {
       name: "Portfólio",
-      path: "/portfolio",
-    },
-    {
-      name: "Contato",
-      path: "/contato",
+      path: "#portfolio",
     },
   ];
 
@@ -30,21 +26,25 @@ const Header = () => {
     document.querySelector("body")?.setAttribute("class", theme);
     const handleScroll = () => {
       setSticky(window.scrollY >= 100);
-    }
-    window.addEventListener("scroll", handleScroll)
+    };
+    window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-
   }, [theme, sticky]);
 
-
   return (
-    <header className={`${sticky && "sticky top-0 shadow-stone-400"} shadow-md dark:shadow-xl duration-500 w-full md:flex items-center justify-between dark:bg-zinc-900 bg-zinc-100 h-auto p-4 z-[3]`}>
+    <header
+      className={`${
+        sticky && "sticky top-0 shadow-stone-400"
+      } shadow-md dark:shadow-xl duration-500 w-full md:flex items-center justify-between dark:bg-zinc-900 bg-zinc-100 h-auto p-4 z-[3]`}
+    >
       <span
         className={`border-gradient-light dark:border-gradient-dark"} font-semibold mb-8 md:text-xl md:mb-0 cursor-pointer`}
       >
-        <a className="font-bold" href="#home">&lt;Rodrigues /&gt;</a>
+        <a className="font-bold" href="#home">
+          &lt;Rodrigues /&gt;
+        </a>
       </span>
       <nav>
         <div
@@ -60,14 +60,19 @@ const Header = () => {
               : "-translate-y-[300%] md:translate-y-0"
           }`}
         >
-          <SwitchTheme setTheme={setTheme} theme={theme}/>
+          <SwitchTheme setTheme={setTheme} theme={theme} />
           {links.map((link) => {
             return (
               <li
                 key={link.name}
                 className="md:ml-6 mt-4 md:mt-0 border-l-2 md:border-l-0 pl-2 border-gradient md:pl-0 dark:text-white text-base text-black duration-500 md:relative"
               >
-                <a className="md:after:absolute md:after:content-[''] md:after:bg-gradient-to-r from-indigo-500 from-21%  via-sky-500 via-45% to-cyan-300 to-90% md:after:h-[2px] md:after:w-0  md:after:left-0 md:after:-bottom-[5px] md:hover:after:w-[100%] md:after:duration-500" href={link.path}>{link.name}</a>
+                <a
+                  className="md:after:absolute md:after:content-[''] md:after:bg-gradient-to-r from-indigo-500 from-21%  via-sky-500 via-45% to-cyan-300 to-90% md:after:h-[2px] md:after:w-0  md:after:left-0 md:after:-bottom-[5px] md:hover:after:w-[100%] md:after:duration-500"
+                  href={link.path}
+                >
+                  {link.name}
+                </a>
               </li>
             );
           })}

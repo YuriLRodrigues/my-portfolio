@@ -13,7 +13,7 @@ const Knowledges = () => {
 
 
   return (
-    <section className="py-20 min-h-[80vh] pb-20 dark:bg-neutral-900 overflow-hidden relative flex flex-col items-center justify-center mx-auto">
+    <section id="knowledges" className="py-20 min-h-[80vh] pb-20 dark:bg-neutral-900 overflow-hidden relative flex flex-col items-center justify-center mx-auto">
       <section
         className="md:absolute text-center md:top-20"
         data-aos="fade-down"

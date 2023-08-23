@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 const Contact = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <section className="py-10 relative overflow-hidden min-h-screen dark:bg-neutral-900">
+    <section id="portfolio" className="py-10 relative overflow-hidden min-h-screen dark:bg-neutral-900">
       <section
         className="flex flex-col items-center justify-center pt-10"
         data-aos="fade-down"

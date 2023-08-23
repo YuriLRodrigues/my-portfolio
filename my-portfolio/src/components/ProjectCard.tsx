@@ -68,7 +68,7 @@ const ProjectCard = ({ project }: ProjectInfo) => {
           {project.images.map((projectImages: string, index) => (
             <SwiperSlide key={index}>
               <img
-                className="duration-700 blur-sm group-hover:blur-0 w-full rounded-xl h-[300px] object-cover object-center aspect-4/3"
+                className="duration-700 blur-sm group-hover:blur-0 w-full h-[300px] object-cover object-center aspect-4/3"
                 src={projectImages}
                 alt={project.name}
               />
