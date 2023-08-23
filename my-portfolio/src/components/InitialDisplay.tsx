@@ -22,11 +22,11 @@ const InitialDisplay = () => {
   }, [])
 
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <section
         className={` ${
           theme === "dark" ? "hexagon-img-dark" : "hexagon-img-light"
-        } w-full md:py-52 py-32 flex flex-col items-center justify-center z-[-1] h-screen dark:text-white text-center gap-3 duration-500`}
+        } w-full overflow-hidden md:py-52 py-32 flex flex-col items-center justify-center z-[-1] h-screen dark:text-white text-center gap-3 duration-500`}
         ref={root}
       >
         <section data-aos="fade-down" data-aos-duration="1000">
