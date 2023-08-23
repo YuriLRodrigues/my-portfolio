@@ -77,12 +77,12 @@
   -webkit-text-stroke-color: #fff;
 }
 .hexagon-img-dark {
-  background-image: url("./utils/img/Hexagon.svg");
+  background-image: url("/utils/img/Hexagon.svg");
   background-size: 300px;
   background-repeat: repeat;
 }
 .hexagon-img-light {
-  background-image: url("./utils/img/HexagonLight.svg");
+  background-image: url("/utils/img/HexagonLight.svg");
   background-size: 300px;
   background-repeat: repeat;
 }
