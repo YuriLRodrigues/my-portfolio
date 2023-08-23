@@ -1,15 +1,15 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import { useMotionValue, useTransform, motion } from "framer-motion";
+// import { useMotionValue, useTransform, motion } from "framer-motion";
 import { techs } from "../Projects/techs";
 
 
 const Knowledges = () => {
   const { theme } = useContext(ThemeContext);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const rotateX = useTransform(y, [-100, 100], [30, -30]);
-  const rotateY = useTransform(x, [-100, 100], [-30, 30]);
+  // const x = useMotionValue(0);
+  // const y = useMotionValue(0);
+  // const rotateX = useTransform(y, [-100, 100], [30, -30]);
+  // const rotateY = useTransform(x, [-100, 100], [-30, 30]);
 
 
   return (
