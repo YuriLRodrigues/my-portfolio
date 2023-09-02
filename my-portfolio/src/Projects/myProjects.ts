@@ -13,15 +13,16 @@ export const projects: ProjectType[] = [
     deploy: "https://first-fs-project-with-hookform-zod.vercel.app/"
   },
   {
-    name: "Portfólio",
-    techs: ["devicon-react-original", "devicon-typescript-original", "devicon-tailwindcss-plain"],
+    name: "Apple Ecommerce",
+    techs: ["devicon-nextjs-original", "devicon-typescript-original", "devicon-tailwindcss-plain"],
     images: [
-      "/utils/img/projects/portfolio1.png",
-      "/utils/img/projects/portfolio2.png",
-      "/utils/img/projects/portfolio3.png",
+      "/utils/img/projects/ecommercenext1.png",
+      "/utils/img/projects/ecommercenext2.png",
+      "/utils/img/projects/ecommercenext3.png",
+      "/utils/img/projects/ecommercenext4.png",
     ],
-    repo: "",
-    deploy: ""
+    repo: "https://github.com/YuriLRodrigues/next-auth",
+    deploy: "https://ecommerce-next-swart-eta.vercel.app/cart"
   },
   {
     name: "PokeReact",

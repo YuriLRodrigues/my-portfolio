@@ -55,7 +55,7 @@ const InitialDisplay = () => {
           </h2>
           <section className="flex gap-6 items-center justify-center py-8">
             <a
-              href="/public/utils/curriculo/curriculo-yuri.pdf" target="_blank"
+              href="/utils/curriculo/Currículo-Yuri.pdf" target="_blank"
               className="hover:-translate-y-2 duration-500 button-gradient p-2 rounded-lg dark:text-white font-medium text-lg flex gap-2 items-center"
             >
               {" "}

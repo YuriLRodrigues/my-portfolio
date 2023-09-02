@@ -53,10 +53,10 @@ export const techs: TechsTypes[] = [
     name: "Typescript",
     icon: "devicon-typescript-plain",
   },
-  // {
-  //   name: "Next",
-  //   icon: "devicon-nextjs-original",
-  // },
+  {
+    name: "Next",
+    icon: "devicon-nextjs-original",
+  },
   // {
   //   name: "Nest",
   //   icon: "devicon-nestjs-plain",
